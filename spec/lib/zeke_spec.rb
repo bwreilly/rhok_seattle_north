@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Zeek do
+describe Zeke do
   it "should hello" do
     Zeek.hello_world.should eq('you rock')
   end
