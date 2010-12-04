@@ -44,15 +44,16 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
-    archive-tar-minitar (0.5.2)
     arel (2.0.6)
     builder (2.1.2)
-    columnize (0.3.2)
     compass (0.10.6)
       haml (>= 3.0.4)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    fusion_tables (0.2.2)
+      gdata_19 (>= 1.1.2)
+    gdata_19 (1.1.2)
     haml (3.0.24)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -60,8 +61,6 @@ GEM
       haml (~> 3.0)
       railties (~> 3.0)
     i18n (0.5.0)
-    linecache19 (0.5.11)
-      ruby_core_source (>= 0.1.4)
     mail (2.2.11)
       activesupport (>= 2.3.6)
       i18n (~> 0.5.0)
@@ -101,17 +100,8 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.2.0)
-    ruby-debug-base19 (0.11.24)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby_core_source (>= 0.1.4)
-    ruby-debug19 (0.11.6)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby-debug-base19 (>= 0.11.19)
-    ruby_core_source (0.1.4)
-      archive-tar-minitar (>= 0.5.2)
     sqlite3-ruby (1.3.2)
+    sqlite3-ruby (1.3.2-x86-mingw32)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -119,14 +109,15 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   compass
+  fusion_tables
   haml
   haml-rails
   hassle!
   rails (= 3.0.3)
   rspec-rails
-  ruby-debug19
   ruby-geonames!
   sqlite3-ruby
