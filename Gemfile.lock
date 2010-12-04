@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/elecnix/ruby-geonames.git
+  revision: 4f1f50087c87132e166d4381fba6d330d02d83db
+  ref: 4f1f50087c87132e166d4381fba6d330d02d83db
+  specs:
+    ruby-geonames (0.2.7)
+
+GIT
   remote: git://github.com/kevmoo/hassle.git
   revision: bd0cd41aaceb002c5364de37d2975d58079f469f
   ref: bd0cd41aaceb002c5
@@ -121,6 +128,7 @@ DEPENDENCIES
   rails (= 3.0.3)
   rspec-rails
   ruby-debug19
+  ruby-geonames!
   sqlite3-ruby
 
 METADATA
