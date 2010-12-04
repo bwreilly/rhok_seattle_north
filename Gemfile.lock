@@ -130,6 +130,3 @@ DEPENDENCIES
   ruby-debug19
   ruby-geonames!
   sqlite3-ruby
-
-METADATA
-  version: 1.0.6
