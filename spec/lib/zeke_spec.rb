@@ -2,9 +2,11 @@ require 'spec_helper'
 
 describe Zeke do
 
-  it "should be cool" do
-    assert true.should be_true
+  result = Zeke.search("denver").toponyms.collect { |foo| foo.name }
+  
+  it ( "We return more than zero results") do
+    assert !Zeke.search("denver").toponyms.empty?.should be_true
   end
-
+  
 end
 
