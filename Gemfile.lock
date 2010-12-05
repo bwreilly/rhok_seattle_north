@@ -51,6 +51,7 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    geokit (1.5.0)
     fusion_tables (0.2.2)
       gdata_19 (>= 1.1.2)
     gdata_19 (1.1.2)
@@ -113,6 +114,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  geokit
   fusion_tables
   haml
   haml-rails
