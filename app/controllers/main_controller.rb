@@ -16,5 +16,7 @@ class MainController < ApplicationController
   end
 
   def results
+    @radius = params['r']
+    @id = params['id']
   end
 end

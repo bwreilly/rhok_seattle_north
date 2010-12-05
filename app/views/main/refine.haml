@@ -16,4 +16,6 @@
         %td= foo[:name]
         %td= foo[:coordinates]
         %td= foo[:population]
+  = label_tag(:r, "Radius:")
+  = text_field_tag(:r)
   = submit_tag("Refine")
