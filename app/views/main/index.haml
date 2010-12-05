@@ -1,1 +1,6 @@
-%h1 Hello, world!
+%h1 Population Center Search
+
+= form_tag(refine_path, :method => "get") do
+  = label_tag(:q, "Search for:")
+  = text_field_tag(:q)
+  = submit_tag("Search")
