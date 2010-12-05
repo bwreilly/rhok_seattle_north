@@ -1,18 +1,19 @@
 %h1 Refine Query
 -#you searched for #{@query}
 %h2 Choose most likely population center
-%table
-  %tr
-    %th
-    %th Kind
-    %th Name
-    %th Coordinates
-    %th Population
-  - @results.each do |foo|
+= form_tag(results_path, :method => "get") do
+  %table
     %tr
-      %td= radio_button_tag(:id,foo[:id],false)
-      %td= foo[:kind]
-      %td= foo[:name]
-      %td= foo[:coordinates]
-      %td= foo[:population]
-
+      %th
+      %th Kind
+      %th Name
+      %th Coordinates
+      %th Population
+    - @results.each do |foo|
+      %tr
+        %td= radio_button_tag(:id,foo[:id],false)
+        %td= foo[:kind]
+        %td= foo[:name]
+        %td= foo[:coordinates]
+        %td= foo[:population]
+  = submit_tag("Refine")
