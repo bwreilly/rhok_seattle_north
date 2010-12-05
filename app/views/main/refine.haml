@@ -5,17 +5,20 @@
   %table
     %tr
       %th
-      %th Kind
       %th Name
       %th Coordinates
       %th Population
-    - @results.each do |foo|
+    - @results.each do |pclist|
       %tr
-        %td= radio_button_tag(:id,foo[:id],false)
-        %td= foo[:kind]
-        %td= foo[:name]
-        %td= foo[:coordinates]
-        %td= foo[:population]
+        %td= radio_button_tag(:id,pclist[:id],false)
+        %td= pclist[:name]
+        %td= pclist[:coordinates]
+        %td= pclist[:population]
   = label_tag(:r, "Radius:")
   = text_field_tag(:r)
+  %p
+  = label_tag("units","Units")
+  = radio_button_tag("units","KM",true)
+  = radio_button_tag("units","MI")
+  %p
   = submit_tag("Refine")
