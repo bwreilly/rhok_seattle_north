@@ -1,10 +1,24 @@
-pending "when the user submits a placename a disambiguation page appears, if
-  more than one result"
-pending "disambiguation page lists closest matches to placename, "
-pending "user enters search radius and correct placename at disambiguation page
-  result page shown"
-pending "results include placename and largest population centers within radius"
-pending "results are displayed as a table"
-pending "result page includes an export to csv function"
-pending "result table includes wikipedia link to each result"
-pending "result table includes osm link to each result"
+require "rspec_helper"
+
+describe MainController do
+  describe "GET index" do
+    it "has a 200 status code" do
+      get :index
+      response.code.should eq("200")
+    end
+  end
+  describe "GET refine" do
+    it "has a 200 status code" 
+    it "returns close matches to placename"
+    it "returns coordinates in xy"
+    it "returns population of potential placenames"
+  end
+  describe "GET results" do
+    it "returns just placename if no other nearby pop centers" 
+    it "returns placename and largest ten nearby pop centers"
+    it "returns placename and next ten popcenters when user asks for more"
+    it "returns results with wikipedia link for each pop center"
+    it "returns results with osm link for each pop center"
+    it "returns results with wikipedia link for each pop center"
+  end
+end
